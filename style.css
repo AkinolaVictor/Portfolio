@@ -1,0 +1,112 @@
+/* This is a media query to give the page a margin if on bigger screens*/
+@media screen and (min-width: 750px) {
+.container{
+		margin: 20px 80px;
+	}	
+}
+/*This media query  wraps the rows to form a line on phones with small screen*/
+@media screen and (min-width: 0px)  {
+.row{
+		flex-wrap: wrap;
+
+	}	
+}
+/*This media query stops the wrap and flexes each on screens greater than 350pixels*/
+ @media screen and (min-width: 351px)  {
+.row{
+		flex-wrap: nowrap;
+	}	
+}
+/*These are the properties i give to the logo*/
+.logo{
+	float: left;
+	width: 40px;
+	height: 40px;
+}
+/*These are the properties i give to the header text*/
+.logotext{
+	text-transform: uppercase;
+	float: right;
+	color: #2d3c49;
+}
+.big{
+	font-size: 28px;
+}
+.small{
+	font-size: 10px;
+	float: right;
+}
+/*i used borders to draw the line*/
+.line{
+	width: 100%;
+    height: 50px;
+    border-bottom: 3px solid #2d3c49;
+    position: relative;
+    
+}
+/*these are the properties of the main image(intended for a slider, though i am still working on it)*/
+.slider{
+	
+	margin: 10px 0px 15px 0px;
+	
+}
+/*the style for the topic*/
+.topic{
+	text-transform: capitalize;
+	color: #7d87ad;	
+}
+.topic::first-letter{
+
+}
+/*these are the properties of the picture used for the main/slider*/
+.image{
+	width: 100%;
+	height:30%;
+	opacity: 1;
+}
+.image:hover{
+	
+	opacity: .5;
+    transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
+}
+
+/*the properties of each row*/
+.row{
+	display: flex;
+	text-align: center;
+	width: 100%;
+}
+/*these are the properties for the pictures in each row*/
+
+ .images{
+ 	width: 93%;
+	height: 60%;
+}
+/*these are the properties of the text below each picture on the row*/
+.coltext{
+	text-transform: uppercase;
+	color: #2d3c49;
+}
+
+/*
+The Explanations for the styles
+_____The Header_____
+..... From the html file, i made the header to be the section that holds the logo, the text on the top of the page, and the line.
+__The logo__
+...i got an icon that fit for a logo and floated it to the top left, and gave it a width and height of 40px each so it does get too
+ big and unfit for a logo...
+__The Text__
+...The text are spanned in the html so as to have full control of it with css. i floated it to the right and transform it to uppercase...
+__The line__
+...it would have been hard drawing such lines with the <hr> tags because of its natural behaviour, so i used the css border to do that...
+.....
+
+_____The Slider_____
+.....this section contains the main picture just below the header, the margin was added to give a space between its top and botom..... 
+_____The Rows_____
+.....the display of each row was flexed so it can give an horizontal output per row,
+with the width added to give a reasonable and equal occupying of the spaces.....
+*/
