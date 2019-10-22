@@ -1,4 +1,4 @@
-/* This is a media query to give the page a margin if on bigger screens*/
+/* This is a media query to give the page a margin if its on bigger screens*/
 @media screen and (min-width: 750px) {
 .container{
 		margin: 20px 80px;
