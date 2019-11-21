@@ -1,7 +1,7 @@
 /* This is a media query to give the page a margin if its on bigger screens*/
 @media screen and (min-width: 750px) {
 .container{
-		margin: 20px 80px;
+		margin: 21px 80px;
 	}	
 }
 /*This media query  wraps the rows to form a line on phones with small screen*/
